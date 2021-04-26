@@ -13,8 +13,7 @@ Pobierz pliki editMe.fxml (src/resources) oraz EditMeController.java (src/contro
 
 # Zadania Wojtka:
 
-Stwórz plik tekstowy i zapisz w nim odpowiedzi na poniższe polecenia (zapytania napisane w SQL):
-(Wszystkie zapytania powinny zostać wykonane na tabeli Customers)
+Stwórz plik tekstowy i zapisz w nim odpowiedzi na poniższe polecenia (zapytania napisane w SQL). Wszystkie zapytania powinny zostać wykonane na tabeli Customers.
 1. Wypisz wszystkie kolumny klientów, którzy nie pochodzą z Brazylii, uporządkowanych malejąco według CustomerID.
 2. Ustaw pole City na „Bydgoszcz”, jeśli klient pochodzi z Hiszpanii lub Niemiec.
 3. Następnie policz klientów pochodzących z Bydgoszczy.
