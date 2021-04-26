@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e0c2a3; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegGameController">
+   <children>
+      <ImageView fitHeight="487.0" fitWidth="656.0" layoutX="64.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../regNumbers.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_RIGHT" layoutX="31.0" layoutY="148.0" prefHeight="200.0" prefWidth="206.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label fx:id="label1" text="1.">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choice1" prefWidth="150.0" style="-fx-background-color: #ffff;" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label fx:id="label2" text="12.">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choice2" prefWidth="150.0" style="-fx-background-color: #ffff;" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label fx:id="label3" text="3.">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choice3" prefWidth="150.0" style="-fx-background-color: #ffff;" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label fx:id="label4" text="14.">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choice4" prefWidth="150.0" style="-fx-background-color: #ffff;" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="543.0" layoutY="333.0" prefHeight="130.0" prefWidth="206.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label fx:id="label5" text="5.">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choice5" prefWidth="150.0" style="-fx-background-color: #ffff;" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label fx:id="label6" text="16.">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choice6" prefWidth="150.0" style="-fx-background-color: #ffff;" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+               <children>
+                  <Label fx:id="label7" text="7.">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choice7" prefWidth="150.0" style="-fx-background-color: #ffff;" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="checkButton" layoutX="678.0" layoutY="517.0" mnemonicParsing="false" onAction="#checkEvent" style="-fx-background-color: #ab7b9c; -fx-background-radius: 45; -fx-border-radius: 45; -fx-border-width: 0.5; -fx-border-color: #2e1806;" text="Sprawdź">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backCultureButton" layoutX="496.0" layoutY="520.0" mnemonicParsing="false" onAction="#backCultureEvent" style="-fx-background-color: #f6c653; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="Wróć do gier kulturowych" />
+      <Button fx:id="backAllButton" layoutX="328.0" layoutY="519.0" mnemonicParsing="false" onAction="#backAllEvent" style="-fx-background-color: #f6c653; -fx-background-radius: 45; -fx-border-radius: 45; -fx-border-width: 0.5; -fx-border-color: #2e1806;" text="Wróć do wszystkich gier" />
+      <Button fx:id="closeButton" layoutX="750.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeEvent" style="-fx-background-color: #f2704e; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="✕">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

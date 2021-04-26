@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ffe79f; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HowManyController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="27.0" layoutY="62.0" prefHeight="116.0" prefWidth="351.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="322.0" text="Ilu słówek chcesz się nauczyć?">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="67.0" prefWidth="367.0" spacing="30.0">
+               <children>
+                  <RadioButton fx:id="tenRadioButton" mnemonicParsing="false" onAction="#tenClicked" text="10">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="howManyButtons" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="fifteenRadioButton" mnemonicParsing="false" onAction="#fifteenClicked" text="15" toggleGroup="$howManyButtons">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="twentyRadioButton" mnemonicParsing="false" onAction="#twentyClicked" text="20" toggleGroup="$howManyButtons">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="77.0" layoutY="171.0" prefHeight="289.0" prefWidth="250.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="250.0" spacing="30.0">
+               <children>
+                  <Label text="Wylosowane słówka">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <ListView fx:id="wordsList" prefHeight="248.0" prefWidth="250.0" />
+         </children>
+      </VBox>
+      <Button fx:id="toVocabGamesButton" layoutX="573.0" layoutY="421.0" mnemonicParsing="false" onAction="#letsPlayVocabEvent" style="-fx-background-color: #ff8566; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="Zagraj!">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="282.0" fitWidth="295.0" layoutX="378.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../oranges.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="500.0" layoutY="421.0" mnemonicParsing="false" onAction="#backEvent" style="-fx-background-color: #ff8566; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="Wróc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="650.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeEvent" style="-fx-background-color: #f2704e; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="✕">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

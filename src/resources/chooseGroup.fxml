@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ffe79f; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChooseGroupController">
+   <children>
+      <GridPane layoutX="214.0" layoutY="365.0" prefHeight="76.0" prefWidth="295.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="vocabularyButton" mnemonicParsing="false" onAction="#vocabularyClicked" style="-fx-background-radius: 45; -fx-background-color: #ff8566; -fx-border-color: #2e1806; -fx-border-width: 0.5; -fx-border-radius: 45;" text="Słownictwo" textFill="#2e1806">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="cultureButton" mnemonicParsing="false" onAction="#cultureClicked" style="-fx-background-radius: 45; -fx-background-color: #ff8566; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="Kultura" textFill="#2e1806" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="177.0" fitWidth="147.0" layoutX="262.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../hoja.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="177.0" fitWidth="179.0" layoutX="409.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../granada.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="179.0" layoutX="95.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../costa.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="252.0" layoutY="327.0" text="Wybierz grupę gier">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton" layoutX="650.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeEvent" style="-fx-background-color: #f2704e; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="✕">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="easterEggButton" layoutX="110.0" layoutY="97.0" mnemonicParsing="false" onAction="#easterEggEvent" prefHeight="90.0" prefWidth="134.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="testButton" layoutX="428.0" layoutY="81.0" mnemonicParsing="false" onAction="#testEvent" prefHeight="130.0" prefWidth="147.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

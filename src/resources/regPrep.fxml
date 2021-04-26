@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #e0c2a3; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegPrepController">
+   <children>
+      <ImageView fitHeight="533.0" fitWidth="715.0" layoutX="14.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../regWithNames.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="playButton" layoutX="682.0" layoutY="513.0" mnemonicParsing="false" onAction="#playEvent" style="-fx-background-color: #ab7b9c; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="Zagraj">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="closeButton" layoutX="750.0" layoutY="20.0" mnemonicParsing="false" onAction="#closeEvent" style="-fx-background-color: #f2704e; -fx-background-radius: 45; -fx-border-color: #2e1806; -fx-border-radius: 45; -fx-border-width: 0.5;" text="✕">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
